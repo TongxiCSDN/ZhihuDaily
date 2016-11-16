@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tongxi.zhihudaily.activity.LoginActivity"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/actionBar_bg"/>
+
+
+    <ImageView
+        android:id="@+id/ivZhihu"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/zhihu_bg"
+        android:layout_below="@+id/toolBarLogin"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名:"
+        android:layout_below="@+id/ivZhihu"
+        android:layout_margin="30dp"
+        style="@style/HomeImageTitleText"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/tvUser"
+        android:layout_below="@+id/ivZhihu"
+       android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:hint="请输入用户名"
+        />
+    <TextView
+        android:id="@+id/tvPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密    码:"
+        android:layout_below="@+id/tvUser"
+        android:layout_margin="30dp"
+        style="@style/HomeImageTitleText"/>
+
+    <EditText
+        android:id="@+id/etPassWord"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/tvPassWord"
+        android:layout_below="@+id/etUser"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPassWord"
+        android:layout_centerHorizontal="true">
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登   录"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注   册"
+        android:layout_marginLeft="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>

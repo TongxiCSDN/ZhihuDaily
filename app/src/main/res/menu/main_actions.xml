@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_message"
+        android:icon="@mipmap/message"
+        android:orderInCategory="10"
+        android:title="消息"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_mode"
+        android:icon="@mipmap/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:title="夜间模式"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_seeting"
+        android:icon="@mipmap/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:title="设置选项"
+        app:showAsAction="never" />
+</menu>

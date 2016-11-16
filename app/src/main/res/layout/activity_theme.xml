@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_navigation"
+    tools:context="com.tongxi.zhihudaily.activity.ThemeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/actionBar_bg"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvThemeContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

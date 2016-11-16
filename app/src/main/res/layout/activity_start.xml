@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_start_bg">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <ImageView
+        android:id="@+id/ivStartPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+        
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版权信息"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            style="@style/WelcomeCopyright"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/ivLog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/zhihu_jietu"/>
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知乎日报"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/ivLog"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每天三次，每次七分钟"
+            android:layout_below="@id/tvStart"
+            android:layout_toRightOf="@id/ivLog"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/text_size_small_i"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"/>
+    </RelativeLayout>
+</LinearLayout>

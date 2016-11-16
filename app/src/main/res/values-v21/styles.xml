@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyToolBar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:showText">true</item>
+    </style>
+
+</resources>

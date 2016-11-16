@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNavigationRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="11"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="@color/actionBar_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/NavigationHeadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="请登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/actionBar_bg"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/ivFavorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@mipmap/favorites" />
+
+        <TextView
+            android:id="@+id/tvFavorites"
+            style="@style/NavigationHeadText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="我的收藏" />
+
+        <ImageView
+            android:id="@+id/ivDownLoad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@mipmap/download" />
+
+        <TextView
+            android:id="@+id/tvDownLoad"
+            style="@style/NavigationHeadText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="离线下载" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_navigation"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@mipmap/home" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            style="@style/NavigationHomeText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="首页" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.7"
+        android:background="@color/white"></ListView>
+</LinearLayout>

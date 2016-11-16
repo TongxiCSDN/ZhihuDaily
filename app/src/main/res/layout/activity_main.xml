@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_navigation"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.tongxi.zhihudaily.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toorBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/actionBar_bg" />
+
+        <LinearLayout
+            android:id="@+id/llViewPagerRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+                <LinearLayout
+                    android:id="@+id/llDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"></LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今日热闻"
+                android:background="@color/gray_navigation"
+                android:padding="20dp"
+                style="@style/TodayNewsText"/>
+        </LinearLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srlRefesh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNavigationRoot"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_weight="11"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:background="@color/actionBar_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/NavigationHeadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="请登录" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="@color/actionBar_bg"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/ivFavorites"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@mipmap/favorites" />
+
+            <TextView
+                android:id="@+id/tvFavorites"
+                style="@style/NavigationHeadText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="我的收藏" />
+
+            <ImageView
+                android:id="@+id/ivDownLoad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@mipmap/download" />
+
+            <TextView
+                android:id="@+id/tvDownLoad"
+                style="@style/NavigationHeadText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="离线下载" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray_navigation"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@mipmap/home" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                style="@style/NavigationHomeText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="首页" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.7"
+            android:background="@color/white"></ListView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/actionBar_bg</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:logo">@mipmap/side_menu</item>
+        <item name="android:homeAsUpIndicator">@mipmap/side_menu</item>
+    </style>
+
+    <style name="NavigationHeadText">
+        <item name="android:textSize">@dimen/text_size_small_i</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NavigationHomeText">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/actionBar_bg</item>
+    </style>
+
+    <style name="NavigationThemeText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_big_i</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_navigation_menu_check_box</item>
+    </style>
+
+    <style name="HomeDailyTitleText">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/black</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="HomeImageTitleText">
+        <item name="android:textSize">@dimen/text_size_big_i</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WelcomeCopyright">
+        <item name="android:textSize">@dimen/text_size_small_ii</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="TodayNewsText">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/text_size_small_ii</item>
+    </style>
+
+    <style name="CommentCountText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@color/gray_navigation</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_small_i</item>
+    </style>
+
+    <style name="CommentText">
+        <item name="android:textSize">@dimen/text_size_small_ii</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CommentText.Author">
+        <item name="android:textSize">@dimen/text_size_small_ii</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
